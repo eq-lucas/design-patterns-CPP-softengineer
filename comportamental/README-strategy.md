@@ -12,7 +12,7 @@ Utilizamos o padrão **Strategy** para encapsular a lógica de validação e bus
 
 A imagem abaixo ilustra o conceito geral do padrão, conforme catalogado pelo Refactoring Guru:
 
-![Diagrama Conceitual do Strategy](UML-strategy.png)
+![Diagrama Conceitual do Strategy](../images/UML-strategy.png)
 
 ### Como funciona nesta implementação (Diferenças Práticas)
 
