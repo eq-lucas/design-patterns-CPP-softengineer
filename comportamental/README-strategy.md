@@ -30,8 +30,7 @@ Diferente do diagrama clássico onde o cliente injeta a estratégia, nesta imple
 
 Essa abordagem retira a responsabilidade do cliente instanciar uma estratégia (sabendo sua existência) e setar no contexto. Ao invés de forçar o cliente a escolher, o sistema faz o teste na lista interna, prosseguindo para a busca do suposto usuário. Isso retira da View a responsabilidade de saber "qual tipo de dado o usuário digitou", centralizando essa inteligência nas estratégias.
 
-
-### 4. Análise Crítica: A Teoria vs. Nossa Prática
+## 4. Análise Crítica: A Teoria vs. Nossa Prática
 
 Para adaptar o padrão Strategy ao mundo real de uma aplicação Web moderna, fizemos uma mudança arquitetural importante em relação ao exemplo clássico.
 
@@ -55,3 +54,40 @@ Por isso, movemos a decisão de "qual estratégia usar" do **Cliente** para dent
 
 **Conclusão Técnica:**
 Enquanto o Strategy clássico usa **Injeção de Dependência** (o cliente injeta a estratégia), nossa implementação usa **Descoberta de Estratégia (Strategy Discovery)** baseada no formato do dado de entrada. Isso mantém o desacoplamento do código (classes separadas) mas adiciona uma camada de inteligência automática.
+
+---
+
+## 5. Implementação Técnica
+
+Para demonstrar o funcionamento do padrão de forma isolada e didática, a implementação principal deste exercício foi realizada em **C++**. 
+
+Isso permite visualizar conceitos de baixo nível (como gerenciamento de memória e ponteiros) que o padrão Strategy exige em linguagens compiladas. O código original do projeto Django (Python), que motivou o uso deste padrão, foi movido para a seção de anotações de estudo.
+
+### Mapeamento dos Arquivos
+
+| Componente | Código Principal (C++) | Código de Origem (Python/Django) |
+| :--- | :--- | :--- |
+| **Localização** | `comportamental/codigo/` | `notes/casos de usos/comportamental login/` |
+| **View/Cliente** | `cliente.hpp` | `cliente.py` |
+| **Contexto** | `contexto.hpp` | `contexto.py` |
+| **Strategy** | `login_strategy.hpp` | `loginstrategy.py` |
+
+
+
+
+### Conceitos de Baixo Nível Abordados
+Na versão C++, aplicamos conceitos rigorosos que o Python abstrai:
+* **Polimorfismo com Ponteiros:** Uso de `std::vector<LoginStrategyValidar*>` para armazenar classes filhas diferentes na mesma lista.
+* **Destrutores Virtuais:** Implementação de `virtual ~Contexto()` e `virtual ~LoginStrategyValidar()` para garantir a limpeza correta da memória Heap e evitar *Memory Leaks*.
+* **Encapsulamento:** Uso estrito de modificadores de acesso (`private` vs `public`) e métodos *Getters* para proteger os dados do Usuário.
+
+
+### Como executar (Implementação C++)
+
+O código C++ possui um `Makefile` configurado para compilação automática.
+
+**Para rodar a partir da raiz do projeto:**
+```bash
+make -C comportamental/codigo
+```
+  
