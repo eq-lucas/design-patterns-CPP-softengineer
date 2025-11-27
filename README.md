@@ -52,5 +52,5 @@ Os códigos e explicações foram organizados da seguinte forma:
 * **Base Teórica:** [Refactoring Guru](https://refactoring.guru/pt-br/design-patterns).
 * **Desenvolvimento e Uso de IA (Google Gemini):**
     1.  **Aplicação Prática:** A lógica dos padrões de projeto foi desenvolvida com base na teoria do *Refactoring Guru*, aplicada diretamente aos casos de uso reais de um sistema de autenticação personalizado (como no Login e Cadastro no Django) para os padrões **Estrutural** e **Comportamental**. O padrão **Criacional** foi desenvolvido a partir do estudo realizado e inspirado em cenários clássicos de uso.
-    2.  **Agilidade em C++:** A ferramenta de IA foi utilizada para agilizar a codificação dos exemplos de estudo em C++, auxiliando na adaptação da lógica original (Python) para C++ seguindo os princípios de Orientação a Objetos.
-    3.  **Revisão Técnica:** Todo o código gerado foi revisado pelo autor, garantindo que a implementação em C++ respeite a lógica original, os conceitos de gerenciamento de memória e os objetivos do Design Pattern estudado.
+    2.  **Agilidade em C++:** A ferramenta de IA foi utilizada para agilizar a codificação dos exemplos de estudo em C++, auxiliando na adaptação da lógica original (Python) seguindo os princípios de Orientação a Objetos.
+    3.  **Revisão Técnica:** Todo o código gerado foi revisado pelo autor ( Lucas ) garantindo que a implementação em C++ respeite a lógica original, os conceitos de gerenciamento de memória e os objetivos do Design Pattern estudado.
