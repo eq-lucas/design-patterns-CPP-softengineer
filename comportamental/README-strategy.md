@@ -14,6 +14,11 @@ A imagem abaixo ilustra o conceito geral do padrão, conforme catalogado pelo Re
 
 ![Diagrama Conceitual do Strategy](../images/UML-strategy.png)
 
+
+E a proxima, o uml feito por mim sobre meu caso de uso
+
+![Diagrama do caso de uso do Strategy](../images/strategy_uml.png)
+
 ### Como funciona nesta implementação (Diferenças Práticas)
 
 Diferente do diagrama clássico onde o cliente injeta a estratégia, nesta implementação o **Contexto é autossuficiente**.

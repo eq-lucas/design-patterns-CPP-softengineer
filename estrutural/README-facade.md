@@ -24,6 +24,12 @@ A imagem abaixo ilustra o conceito geral do padrão, conforme catalogado pelo Re
 
 ![Diagrama Conceitual do Facade](../images/UML-facade.png)
 
+
+E a proxima, o uml feito por mim sobre meu caso de uso
+
+![Diagrama do caso de uso do Facade](../images/facade_uml.png)
+
+
 ### Aplicação no Projeto (Mapeamento)
 
 No nosso contexto, os papéis do padrão são desempenhados pelas seguintes classes:
